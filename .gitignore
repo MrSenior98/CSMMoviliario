@@ -1,0 +1,36 @@
+# .gitignore
+
+# Ignorar los archivos de configuración de Node
+/node_modules
+/package-lock.json
+/package.json
+
+# Ignorar los archivos de configuración de Bower
+/bower_components
+
+# Ignorar los archivos de configuración de Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Ignorar los archivos de configuración de Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignorar los archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar los archivos de configuración del editor
+*.sublime-project
+*.sublime-workspace
+*.vscode
+
+# Ignorar los archivos de registro
+*.log
+
+# Ignorar los archivos temporales
+*.tmp
