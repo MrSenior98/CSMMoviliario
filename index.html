@@ -9,67 +9,26 @@
   </head>
 
   <body>
-    <header>
-      <img src="Imagenes/Logo.png" alt="logo" />
-      <div class="container-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="icon-cart"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-          />
-        </svg>
-        <div class="count-products">
-          <span id="contador-productos">0</span>
-        </div>
-
-        <div class="container-cart-products hidden-cart">
-          <div class="cart-product">
-            <div class="info-cart-product">
-              <span class="cantidad-producto-carrito">1</span>
-              <p class="titulo-producto-carrito">Zapatos Nike</p>
-              <span class="precio-producto-carrito">$80</span>
-            </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="icon-close"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
-          <div class="cart-total">
-            <h3>Total:</h3>
-            <span class="total-pagar">$200</span>
-          </div>
+    <header class="header">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-bars">
+            <img src="Imagenes/menu.png" height="25px" />
+          </i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#Camas">Camas</a>
+          <a href="#Sillas">Sillas</a>
+          <a href="#Regatones">Regatones</a>
+          <a href="#Otros">Otros</a>
         </div>
       </div>
+      <img src="Imagenes/Logo.png" alt="logo" />
     </header>
-    <div class="nav-bg">
-      <nav class="navegacionPrincipal contenedor">
-        <a href="#Camas">Camas</a>
-        <a href="#Sillas">Sillas</a>
-        <a href="#Regatones">Regatones</a>
-        <a href="#Otros">Otros</a>
-      </nav>
-    </div>
+
     <section class="hero">
       <div class="contenido-hero">
-        <h2 class="titulo">CMS<span>Moviliario</span></h2>
+        <h2 class="titulo">CSM<span>Mobiliario</span></h2>
 
         <p>
           <!-- Icono de Ubicacion -->
@@ -98,7 +57,8 @@
       </div>
     </section>
     <div class="Secciones">
-      <div class="Camas Seccion" id="Camas">
+      <div id="Camas" class="Fix"></div>
+      <div class="Camas Seccion">
         <h2>Camas</h2>
         <div class="container-items">
           <div class="item">
@@ -174,8 +134,8 @@
           </div>
         </div>
       </div>
-
-      <div class="Sillas Seccion" id="Sillas">
+      <div id="Sillas" class="Fix"></div>
+      <div class="Sillas Seccion">
         <h2>Sillas</h2>
         <div class="container-items">
           <div class="item">
@@ -220,8 +180,8 @@
           </div>
         </div>
       </div>
-
-      <div class="Regatones Seccion" id="Regatones">
+      <div id="Regatones" class="Fix"></div>
+      <div class="Regatones Seccion">
         <h2>Regatones</h2>
         <div class="container-items">
           <div class="item">
@@ -286,8 +246,8 @@
           </div>
         </div>
       </div>
-
-      <div class="Otros Seccion" id="Otros">
+      <div id="Otros" class="Fix"></div>
+      <div class="Otros Seccion">
         <h2>Otros</h2>
         <div class="container-items">
           <div class="item">

@@ -6,16 +6,65 @@
   box-sizing: border-box;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 7rem;
+  z-index: 1000;
+  padding: 1.5rem;
+}
+
 /*Seccion Navegacion */
 
-.navegacionPrincipal {
+.dropbtn {
+  background-color: transparent;
+  padding: 16px;
+  font-size: 2.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 1.6rem;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  background-color: rgba(234, 231, 231, 0.7);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-size: 2rem;
+}
+
+.fa-bars {
+  font-size: 2.4rem;
+}
+
+/* .navegacionPrincipal {
   display: flex;
   flex-direction: column;
   text-align: left;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   background-color: aquamarine;
-}
+  background-color: ;
+} */
 
 @media (min-width: 768px) {
   .navegacionPrincipal {
@@ -60,6 +109,7 @@
   height: 400px;
   position: relative;
   margin-bottom: 2rem;
+  margin-top: 8rem;
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
@@ -87,6 +137,22 @@
 
 /* Seccion Articulos */
 
+.FixCamas {
+  height: 7rem;
+}
+
+.FixSillas {
+  height: 7rem;
+}
+
+.FixRegatones {
+  height: 7rem;
+}
+
+.Fix {
+  height: 7rem;
+}
+
 .Secciones {
   margin: 3rem 4rem;
 }
@@ -98,7 +164,10 @@
 .Seccion h2 {
   display: flex;
   justify-content: center;
-  background-color: aquamarine;
+  /* background-color: #a09a9a; */
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .titulo {
@@ -118,7 +187,8 @@
 }
 
 body {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-top: 8rem;
   max-width: 1200px;
   font-family: "Lato";
   color: #333;
