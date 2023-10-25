@@ -21,7 +21,7 @@
 
 .dropbtn {
   background-color: transparent;
-  padding: 16px;
+  padding: 1.6rem;
   font-size: 2.6rem;
   border: none;
   cursor: pointer;
@@ -33,7 +33,10 @@
 }
 
 .dropdown-content {
+  display: flex;
   display: none;
+  right: 0;
+  flex-direction: column;
   position: absolute;
   min-width: 1.6rem;
   z-index: 1;
@@ -55,16 +58,6 @@
 .fa-bars {
   font-size: 2.4rem;
 }
-
-/* .navegacionPrincipal {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  background-color: aquamarine;
-  background-color: ;
-} */
 
 @media (min-width: 768px) {
   .navegacionPrincipal {
@@ -363,4 +356,130 @@ header {
   padding: 15px 10px;
   cursor: pointer;
   border-radius: 25px;
+}
+
+.contenedor-campos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.795);
+  padding: 2rem;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .campo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .campo {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+
+.campo label {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+@media (min-width: 480px) {
+  .campo label {
+    flex: 0 0 90px;
+  }
+}
+
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  :is(.campo)
+    :is(
+      input[type="text"],
+      input[type="text"],
+      input[type="tel"],
+      input[type="mail"],
+      textarea
+    ) {
+    flex: 1;
+  }
+}
+
+.w-100 {
+  flex: 0 0 100%;
+}
+
+.campo textarea {
+  height: 4rem;
+}
+
+.enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button .button {
+  background-color: #0f160f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.footer {
+  text-align: center;
+}
+
+legend {
+  margin: 1rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.whatsapp-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 3rem;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-button img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #000;
+  height: 1.8rem;
+  color: #e9e60a;
 }

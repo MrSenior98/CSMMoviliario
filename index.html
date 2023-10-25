@@ -10,6 +10,7 @@
 
   <body>
     <header class="header">
+      <img src="Imagenes/Logo.png" alt="logo" />
       <div class="dropdown">
         <button class="dropbtn">
           <i class="fa fa-bars">
@@ -21,9 +22,9 @@
           <a href="#Sillas">Sillas</a>
           <a href="#Regatones">Regatones</a>
           <a href="#Otros">Otros</a>
+          <a href="#contacto">Contacto</a>
         </div>
       </div>
-      <img src="Imagenes/Logo.png" alt="logo" />
     </header>
 
     <section class="hero">
@@ -302,7 +303,51 @@
           </div>
         </div>
       </div>
+      <div id="contacto" class="Fix"></div>
+      <div class="contacto Seccion">
+        <h2>Contacto</h2>
+        <form class="formulario" action="#" method="POST">
+          <legend>Contactános llenando todos los campos por favor</legend>
+
+          <div class="contenedor-campos">
+            <div class="campo">
+              <label>Nombre</label>
+
+              <input type="text" name="nombre" placeholder="Nombre" required />
+            </div>
+            <div class="campo">
+              <label>Teléfono</label>
+
+              <input type="tel" name="telefono" placeholder="Teléfono" />
+            </div>
+            <div class="campo w-100">
+              <label>Correo</label>
+
+              <input type="mail" name="correo" placeholder="Mail" />
+            </div>
+            <div class="campo w-100">
+              <label>Mensaje:</label>
+
+              <textarea></textarea>
+            </div>
+          </div>
+          <!--.contenedor-campos-->
+          <div class="submit-button">
+            <input class="button" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
     </div>
+    <a
+      href="https://wa.me/593987548351"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <img src="Imagenes/whatsapp.png" alt="Icono de WhatsApp" height="60px" />
+    </a>
+    <footer class="footer">
+      <p>Todos los derechos reservados por CreativeSouce</p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
