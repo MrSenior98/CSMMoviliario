@@ -18,8 +18,7 @@
   height: 3.5rem;
   z-index: 1000;
   padding: 0;
-  line-height: 0rem;
-  background-color: #fff;
+  background-color: white;
 }
 
 .csmLogo {
@@ -92,7 +91,7 @@
   height: 40rem;
   position: relative;
   margin-bottom: 2rem;
-  margin-top: 8rem;
+  margin-top: 0rem;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   /* margin: 2rem; */
@@ -171,13 +170,6 @@ img {
 }
 
 /* Header */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0 40px 0;
-  background-color: transparent;
-}
 
 .container-icon {
   position: relative;
