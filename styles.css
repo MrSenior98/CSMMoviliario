@@ -33,7 +33,6 @@
 }
 
 .redes {
-  /* margin-right: 1rem; */
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   background-color: transparent;
@@ -80,6 +79,8 @@
   display: block;
   font-size: 2rem;
 }
+
+/* media query para telefonos */
 
 @media (min-width: 400px) {
   .header {
@@ -204,40 +205,7 @@ img {
 
 /* Header */
 
-.container-icon {
-  position: relative;
-}
-
-.count-products {
-  position: absolute;
-  top: 55%;
-  right: 0;
-  background-color: #000;
-  color: #fff;
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-#contador-productos {
-  font-size: 12px;
-}
-
-.container-cart-products {
-  position: absolute;
-  top: 50px;
-  right: 0;
-  background-color: #fff;
-  width: 400px;
-  z-index: 1;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.cart-product {
+/* .cart-product {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -253,7 +221,7 @@ img {
 
 .titulo-producto-carrito {
   font-size: 20px;
-}
+} */
 
 h2 {
   display: flex;
@@ -263,7 +231,7 @@ h2 {
   font-style: italic;
 }
 
-.precio-producto-carrito {
+/* .precio-producto-carrito {
   font-weight: 700;
   font-size: 20px;
   margin-left: 10px;
@@ -272,9 +240,9 @@ h2 {
 .cantidad-producto-carrito {
   font-weight: 400;
   font-size: 20px;
-}
+} */
 
-.icon-close {
+/* .icon-close {
   width: 25px;
   height: 25px;
 }
@@ -282,9 +250,9 @@ h2 {
 .icon-close:hover {
   stroke: red;
   cursor: pointer;
-}
+} */
 
-.cart-total {
+/* .cart-total {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -295,7 +263,7 @@ h2 {
 .cart-total h3 {
   font-size: 20px;
   font-weight: 700;
-}
+} */
 
 /* Main */
 
@@ -374,16 +342,9 @@ h2 {
 }
 
 @media (min-width: 480px) {
-  .campo {
-    display: flex;
-    align-items: center;
-  }
 }
 
 @media (min-width: 768px) {
-  .campo {
-    flex: 0 0 calc(50% - 0.5rem);
-  }
 }
 
 .campo label {
@@ -391,12 +352,7 @@ h2 {
   font-weight: 700;
   margin-bottom: 0.5rem;
   display: block;
-}
-
-@media (min-width: 480px) {
-  .campo label {
-    flex: 0 0 90px;
-  }
+  background-color: red;
 }
 
 .campo input[type="text"],
