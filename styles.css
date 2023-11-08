@@ -21,23 +21,6 @@
   background-color: white;
 }
 
-@media (min-width: 400px) {
-  .header {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3.5rem;
-    z-index: 1000;
-    padding: 0;
-    background-color: white;
-  }
-}
-
 .csmLogo {
   padding: -2;
 }
@@ -49,18 +32,11 @@
   background-color: transparent;
 }
 
-@media (min-width: 400px) {
-  .AlFinal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: transparent;
-  }
-}
-
 .redes {
-  margin-right: 1rem;
-  margin-top: 2.5rem;
+  /* margin-right: 1rem; */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
 }
 
 /*Seccion Navegacion */
@@ -103,6 +79,36 @@
 .dropdown:hover .dropdown-content {
   display: block;
   font-size: 2rem;
+}
+
+@media (min-width: 400px) {
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    z-index: 1000;
+    padding: 0;
+    background-color: white;
+  }
+  .AlFinal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+  .redes {
+    margin-right: 1rem;
+    margin-top: 2.5rem;
+  }
+  .csmLogo {
+    padding: -2;
+  }
 }
 
 /* Fin de Seccion Navegacion */
