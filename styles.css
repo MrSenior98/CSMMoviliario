@@ -188,6 +188,8 @@ body {
   margin-top: 8rem;
   font-family: "Lato";
   color: #333;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .icon-cart {
@@ -206,24 +208,6 @@ img {
 
 /* Header */
 
-/* .cart-product {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.info-cart-product {
-  display: flex;
-  justify-content: space-between;
-  flex: 0.8;
-}
-
-.titulo-producto-carrito {
-  font-size: 20px;
-} */
-
 h2 {
   display: flex;
   justify-content: center;
@@ -235,11 +219,8 @@ h2 {
 /* Main */
 
 .container-items {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
   justify-content: center;
-  align-items: center;
+  display: grid;
   background-color: transparent;
 }
 
@@ -248,7 +229,6 @@ h2 {
   max-width: 15rem;
   min-height: 32rem;
   display: grid;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -296,19 +276,6 @@ h2 {
   border-radius: 25px;
 }
 
-.contenedor-campos {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.795);
-  padding: 2rem;
-}
-
-.campo {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-
 @media (min-width: 370px) {
   .container-items {
     display: grid;
@@ -346,6 +313,19 @@ h2 {
   padding: 0.5rem;
   border: none;
   border-radius: 0.5rem;
+}
+
+.contenedor-campos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.795);
+  padding: 2rem;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -416,9 +396,11 @@ legend {
 }
 
 .footer {
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   background-color: #000;
   height: 100%;
   color: #e9e60a;
+  font-size: large;
 }
