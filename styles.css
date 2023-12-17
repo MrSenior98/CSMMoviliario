@@ -298,6 +298,12 @@ h2 {
   }
 }
 
+/* formulario */
+
+.formulario {
+  border-radius: 15px;
+}
+
 .campo label {
   color: #fff;
   font-weight: 700;
@@ -321,6 +327,7 @@ h2 {
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.795);
   padding: 2rem;
+  border-radius: 2rem;
 }
 
 .campo {
