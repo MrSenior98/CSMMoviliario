@@ -70,7 +70,7 @@
 
 .dropdown-content a {
   color: black;
-  padding: 1.2rem 1.6rem;
+  padding: 1rem 1rem;
   text-decoration: none;
   display: block;
   background-color: rgba(234, 231, 231, 0.7);
@@ -78,7 +78,7 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* media query para telefonos */
@@ -300,10 +300,6 @@ h2 {
 
 /* formulario */
 
-.formulario {
-  border-radius: 15px;
-}
-
 .campo label {
   color: #fff;
   font-weight: 700;
@@ -379,7 +375,7 @@ legend {
   font-size: 1.4rem;
   display: flex;
   justify-content: center;
-  color: rgb(174, 210, 15);
+  color: rgb(228, 51, 11);
   font-weight: bold;
 }
 
