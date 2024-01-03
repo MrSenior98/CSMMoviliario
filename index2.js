@@ -1,5 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js';
 import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore.js';
+
 const firebaseConfig = {
     apiKey: "AIzaSyB3AJBzqkZE8zVLZ8gJAVRkOeLyBl1aKao",
     authDomain: "csmmobiliario.firebaseapp.com",
@@ -17,7 +18,6 @@ const db = getFirestore(app)
 // Referencia al formulario
 const form = document.querySelector('#Formu');
 
-console.log(form)
 // Evento de envío del formulario
 
 const firestoreSave = async (e) => {
