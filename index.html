@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSMMobiliario</title>
-
     <link rel="icon" type="image/svg+xml" href="Imagenes/favicon.svg" />
-    <script type="module" src="firebase-app.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
   </head>
 
   <body>
@@ -378,9 +374,8 @@
 
       <h2>Contactanos</h2>
 
-      <form class="formulario" action="#" method="GET" id="Formu">
+      <form class="formulario" id="Formu">
         <legend>Contactános llenando todos los campos por favor</legend>
-
         <div class="contenedor-campos">
           <div class="campo">
             <label>Nombre</label>
@@ -411,7 +406,7 @@
           <div class="campo w-100">
             <label>Mensaje:</label>
 
-            <textarea id="Mensaje"></textarea>
+            <textarea id="Mensaje" name="mensaje"></textarea>
           </div>
         </div>
         <!--.contenedor-campos-->
@@ -433,9 +428,6 @@
       <p>Todos los derechos reservados por CSMMoviliario</p>
     </footer>
     <!-- <script src="index.js"></script> -->
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-    <script type="module" src="firebase-app.js"></script>
-
-    <script src="index2.js"></script>
+    <script src="index2.js" type="module"></script>
   </body>
 </html>
